@@ -1,6 +1,70 @@
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 128px;
-  font-style: normal;
+body {
+  font-family: "Roboto", sans-serif;
+  background: black;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/beyonce-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+header h1 {
   font-weight: bold;
+  font-size: 128px;
+  font-family: "Playfair Display", serif;
+  margin: 30px 0;
+  line-height: 1;
+}
+header h2 {
+  font-weight: 400px;
+  font-size: 40px;
+  margin: 0;
+  line-height: 1;
+}
+header h3 {
+  font-weight: 900px;
+  font-size: 24px;
+
+  letter-spacing: 5px;
+  margin: 0;
+  line-height: 1;
+}
+header a {
+  font-weight: 600px;
+  font-size: 16px;
+
+  border-radius: 20px;
+
+  color: white;
+  background: blueviolet;
+  padding: 16px 32px;
+
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 32px;
+  line-height: 1;
+}
+
+@media (max-width: 968px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 64px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
 }
