@@ -1,9 +1,17 @@
 body {
   font-family: "Roboto", sans-serif;
-  background: black;
+  background: #030504;
 }
 .container {
   max-width: 1400px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+section {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -32,7 +40,6 @@ header h2 {
 header h3 {
   font-weight: 900px;
   font-size: 24px;
-
   letter-spacing: 5px;
   margin: 0;
   line-height: 1;
@@ -40,18 +47,51 @@ header h3 {
 header a {
   font-weight: 600px;
   font-size: 16px;
-
   border-radius: 20px;
-
   color: white;
   background: blueviolet;
   padding: 16px 32px;
-
   display: inline-block;
   text-align: center;
   text-decoration: none;
   margin-top: 32px;
   line-height: 1;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
+    url("../images/beyonce-footer.png");
+  background-color: #020403;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  font-family: "Playfair Display", serif;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  line-height: 24px;
 }
 
 @media (max-width: 968px) {
