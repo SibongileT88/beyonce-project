@@ -6,6 +6,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
 .grid {
   display: grid;
 
@@ -22,11 +23,45 @@ body {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
+.grid-3-column-cards {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-headings {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+.card {
+  background: white;
+}
+.btn {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  background-color: blueviolet;
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
+    url("../images/beyonce-wallpaper-cards.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px;
 }
 
 header {
@@ -88,6 +123,21 @@ main h3 {
   line-height: 1;
   margin: 0;
 }
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #272044;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  color: #272044;
+}
+
 main p {
   font-size: 16px;
   font-weight: 400;
