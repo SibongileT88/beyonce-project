@@ -13,7 +13,8 @@ body {
   grid-gap: 60px;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 
 .grid-3-columns {
@@ -25,6 +26,13 @@ body {
 }
 .grid-3-column-cards {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.text-center {
+  text-align: center;
 }
 
 .card-headings {
@@ -144,6 +152,9 @@ main p {
   opacity: 0.7;
   color: #030504;
 }
+iframe {
+  margin: 6px 0;
+}
 
 footer {
   color: white;
@@ -199,5 +210,8 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
